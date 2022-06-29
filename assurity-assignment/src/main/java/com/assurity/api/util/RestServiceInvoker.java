@@ -11,6 +11,13 @@ import org.apache.http.util.EntityUtils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+/**
+ * Utility class for centrally performing all REST API invocations.
+ * Can be used by all the test suits. 
+ * 
+ * @author Diwakar.B
+ * @version 1.0 
+ */
 public class RestServiceInvoker {
 
 	/**
@@ -31,7 +38,6 @@ public class RestServiceInvoker {
 		String response = EntityUtils.toString(httpResponse.getEntity());
 		T readValue = om.readValue(response, clazz);
 		return readValue;
-
 	}
 
 	/**
