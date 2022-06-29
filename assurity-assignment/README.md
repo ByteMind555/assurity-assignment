@@ -4,16 +4,18 @@
 Step 1: Build the application with command **mvn clean:install**
 
 Step 2: Open the code: 
-	Class		- "**FunctionalTest.java**" in package 
+	Class		- "**FunctionalTest.java**" in  
 	Package		-  **com.assurity.api.test.init**
 
-Step 3: Run as TestNG test
+Step 3: Run as TestNG test in class FunctionalTest.java
 
 Step 4: Validate the output
 
+Note: We can enable Jenkins Jobs for the test to be triggered when the git commit hook is invoked. Helps in proper CI/CD pipelining.
+
 ## **Problem statement**
 
-Using the API given below create an automated test with the listed acceptance criteria:
+Using GET API given below create an automated test with the listed acceptance criteria:
 
 
 API = https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json?catalogue=false
@@ -32,6 +34,3 @@ Your test needs to be written using a programming language of your choice (not a
 Submit your test to us in a format that lets us execute and review the code (it must be submitted in a public repository like Bitbucket or Github)
 Your test must validate all the three acceptance criteria
 Points will be awarded for meeting the criteria, style and the use of good practices and appropriate use of source control
-
-
-### Reference Documentation
